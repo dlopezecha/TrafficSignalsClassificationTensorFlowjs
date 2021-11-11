@@ -13,13 +13,12 @@ async function init() {
   const metadataURL = URL + "metadata.json";
   modelLoaded = false;
   $('.progress-bar').show();
-  console.log("Loading model...");
+  console.log("Cargando modelo...");
   // Cargar el modelo y los metadatos 
   model = await tmImage.load(modelURL, metadataURL);
   maxPredictions = model.getTotalClasses();
-
   // Mensaje de carga de modelo de forma correcta
-  console.log("Model loaded.");
+  console.log("Modelo cargado.");
   $('.progress-bar').hide();
   modelLoaded = true;
 }
