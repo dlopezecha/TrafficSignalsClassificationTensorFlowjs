@@ -16,11 +16,11 @@ git clone https://github.com/dlopezecha/TrafficSignalsClassificationTensorFlowjs
 ```
 npm i
 ```
-- Ejecutar el comando start
+- Ejecutar la aplicación usando el comando start
 ```
 npm start
 ```
-- Carga una imagen *.jpg o *.jpeg y presiona predecir
+- Carga una imagen *.jpg y presiona predecir
 
 # How to test it?
 If you want to test it, you need to do the next steps:
@@ -28,7 +28,7 @@ If you want to test it, you need to do the next steps:
 ```
 git clone https://github.com/dlopezecha/TrafficSignalsClassificationTensorFlowjs.git
 ```
-- Install libraries:
+- Install npm libraries:
 ```
 npm i
 ```
@@ -36,34 +36,47 @@ npm i
 ```
 npm start
 ```
-- Select a *.jpg o *.jpeg image and press "predecir" button
+- Select a *.jpg image and press "predecir" button.
 
-# Tecnologías
-Estas son las tecnologías usadas para crear este proyecto funcional
+# Librerías y tecnologías
+Estas son las librerías usadas para crear este proyecto funcional:
 
-- [Tensorflow 2.6.0](https://www.tensorflow.org/)
-- Keras 2.6.0
-- HTML5
-- CSS ([Bootstrap 5.1.3](https://jquery.com/))
-- JS
-- [Jquery](https://jquery.com/)
-  
+- [TensorflowJS 1.3.1](https://www.tensorflow.org/js)
+- [TeachableMachine 0.8](https://teachablemachine.withgoogle.com/)
+- [Bootstrap 4.3.1](https://getbootstrap.com/)
+- [Jquery 3.6.0](https://jquery.com/)
+
+# Libraries and technologies
+These are the libraries used to create this functional project: 
+
+- [TensorflowJS 1.3.1](https://www.tensorflow.org/js)
+- [TeachableMachine 0.8](https://teachablemachine.withgoogle.com/)
+- [Bootstrap 4.3.1](https://getbootstrap.com/)
+- [Jquery 3.6.0](https://jquery.com/)
+
 # DataSets
-Para este proyecto se ha usado la tecnología [Teachable Machine](https://teachablemachine.withgoogle.com/) de Google para crear el modelo.
+Para este proyecto se ha usado la tecnología [Teachable Machine](https://teachablemachine.withgoogle.com/) de Google para crear un modelo desde 0.
 
+For this project, Google technology [Teachable Machine](https://teachablemachine.withgoogle.com/) has been used to create a model from scratch.
 
-# Clases creadas para el DataSet
+![TeachableMachine DataSet](images\teachablemachine.jpg "Modelo Señales de Transito")
 
-- SP-01: Stop
+# Clases del DataSet
+- SP-01: PARE   
+<img src="https://practicatest.co/static/img/co/temario/senales_reglamentarias/sr01_pare.png" alt="PARE" width="80"/>
+- SP-02: CEDA EL PASO   
+<img src="https://practicatest.co/static/img/co/temario/senales_reglamentarias/sr02_ceda_el_paso.png" alt="CEDA EL PASO" width="80"/>
+- SP-28: PROHIBIDO PARQUEAR   
+<img src="https://practicatest.co/static/img/co/temario/senales_reglamentarias/sr28_prohibido_parquear.png" alt="PROHIBIDO PARQUEAR" width="80"/>
 
-# Librerías
-Las librerías que fueron utilizadas para crear esta red neuronal son las siguientes:
-- TensorFlowJS 2.5
-- Express 4.17.1
+# DataSet Classes
+- SP-01: STOP   
+<img src="https://practicatest.co/static/img/co/temario/senales_reglamentarias/sr01_pare.png" alt="PARE" width="80"/>
+- SP-02: YIELD   
+<img src="https://practicatest.co/static/img/co/temario/senales_reglamentarias/sr02_ceda_el_paso.png" alt="CEDA EL PASO" width="80"/>
+- SP-28: NO PARKING   
+<img src="https://practicatest.co/static/img/co/temario/senales_reglamentarias/sr28_prohibido_parquear.png" alt="PROHIBIDO PARQUEAR" width="80"/>
 
 # Autores
 Se listan a continuación los autores de este repositorio:
 - Daniel López Echavarría
-
-# TrafficSignalsClassificationTensorFlowjs
-
