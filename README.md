@@ -20,7 +20,8 @@ npm i
 ```
 npm start
 ```
-- Carga una imagen *.jpg y presiona predecir
+- Abre tu navegador usando la siguiente (http://localhost:3000/).
+- Carga una imagen *.jpg y presiona predecir.
 
 # How to test it?
 If you want to test it, you need to do the next steps:
@@ -36,6 +37,7 @@ npm i
 ```
 npm start
 ```
+- Open your web browser using path (http://localhost:3000/).
 - Select a *.jpg image and press "predecir" button.
 
 # Librerías y tecnologías
