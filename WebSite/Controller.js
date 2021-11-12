@@ -84,16 +84,18 @@ $(async function () {
     });
 
     // Reorganizamos los objetos
-    let top5 = Array.from(predictions)
+    let OrderPredictions = Array.from(predictions)
       .sort(function (a, b) { // Se ordena los resultador por probabilidad
         return b.probability - a.probability;
-      }).slice(0, 3); // Cortamos la cantidad de resultados (0,3) = Solo 3
+      }); //.slice(0, 3); // Cortamos la cantidad de resultados (0,3) = Solo 3
 
-    console.log("Predicciones ordenadas: ", top5);
-
-    $("#prediction-list").empty();
-    top5.forEach(function (p) {
-      $("#prediction-list").append(`<li>${p.className}: ${p.probability.toFixed(6)}</li>`);
-    });
+    console.log("Predicciones ordenadas: ", OrderPredictions);
+    let resClass = TARGET_CLASES.filter(function (param) {
+      return param.class === OrderPredictions[0].className;
+    })[0];
+    
+    // Se realiza append a DOM del resultado de la predicción
+    $("#prediction").empty();
+    $("#prediction").append(resClass.data);
   });
 });
